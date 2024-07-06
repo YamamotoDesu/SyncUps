@@ -35,7 +35,7 @@ struct SyncUp: Equatable, Identifiable, Codable {
   var title = ""
 ```
 
-## Namiong
+## Naming rules
 
 Important
 
