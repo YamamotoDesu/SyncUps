@@ -59,6 +59,8 @@ struct SyncUpsList {
 ```
 
 ## [Reduce type ](https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/reduce/)
+A type-erased reducer that invokes the given reduce function.
+
 Implement the body of the reducer by using the Reduce type to implement each action. 
 
 ```swift
