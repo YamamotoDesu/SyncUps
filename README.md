@@ -1,4 +1,6 @@
-## IdentifiedCollections
+## [IdentifiedCollections](https://github.com/pointfreeco/swift-identified-collections)
+A library of data structures for working with collections of identifiable elements in an ergonomic, performant way.
+
 Before:
 
 ```swift
