@@ -1,5 +1,4 @@
 import Foundation
-import IdentifiedCollections
 import SwiftUI
 
 struct SyncUp: Equatable, Identifiable, Codable {
