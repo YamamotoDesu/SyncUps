@@ -34,3 +34,25 @@ struct SyncUp: Equatable, Identifiable, Codable {
   var theme: Theme = .bubblegum
   var title = ""
 ```
+
+## Namiong
+
+Important
+
+As we saw in Meet the Composable Architecture, we prefer to name our actions after exactly what happens in the view rather than what logic we want to execute. So we prefer addSyncUpButtonTapped over something like showAddSheet.
+https://arc.net/l/quote/brhhamqp
+
+```swift
+@Reducer
+struct SyncUpsList {
+    @ObservableState
+    struct State: Equatable {
+        var syncUps: IdentifiedArrayOf<SyncUp> = []
+    }
+    enum Action {
+      case addSyncUpButtonTapped
+      case onDelete(IndexSet)
+      case syncUpTapped(id: SyncUp.ID)
+    }
+}
+```
