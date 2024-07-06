@@ -57,3 +57,27 @@ struct SyncUpsList {
     }
 }
 ```
+
+## [Reduce type ](https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/reduce/)
+Implement the body of the reducer by using the Reduce type to implement each action. 
+
+```swift
+@Reducer
+struct SyncUpsList {
+   /// ---------------------- ///
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+            case .addSyncUpButtonTapped:
+                return .none
+
+            case let .onDelete(indexSet):
+                state.syncUps.remove(atOffsets: indexSet)
+                return .none
+
+            case .syncUpTapped:
+                return .none
+            }
+        }
+    }
+}
