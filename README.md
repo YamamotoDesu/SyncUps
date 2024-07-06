@@ -81,3 +81,38 @@ struct SyncUpsList {
         }
     }
 }
+```
+
+## [Store](https://pointfreeco.github.io/swift-composable-architecture/main/documentation/composablearchitecture/store/)
+A store represents the runtime that powers the application. It is the object that you will pass around to views that need to interact with the application.
+```swift
+struct SyncUpsListView: View {
+  let store: StoreOf<SyncUpsList>
+
+
+  var body: some View {
+    List {
+      ForEach(store.syncUps) { syncUp in
+        Button {
+
+
+        } label: {
+          CardView(syncUp: syncUp)
+        }
+        .listRowBackground(syncUp.theme.mainColor)
+      }
+      .onDelete { indexSet in
+        store.send(.onDelete(indexSet))
+      }
+    }
+    .toolbar {
+      Button {
+        store.send(.addSyncUpButtonTapped)
+      } label: {
+        Image(systemName: "plus")
+      }
+    }
+    .navigationTitle("Daily Sync-ups")
+  }
+}
+```
