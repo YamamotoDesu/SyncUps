@@ -17,6 +17,7 @@ struct SyncUp: Equatable, Identifiable, Codable {
 ```
 
 While these models would work well enough in our SyncUps application, we can do better. First it is not ideal to hold onto plain arrays in our domain. This leads us to a situation of referring to attendees and meetings by their positional index in the array, rather than their inherent ID, as given by the Identifiable protocol. This becomes especially problematic when performing asynchronous effects in which the position of a value can change while the effect is being performed, making it possible to refer to the wrong value, leading to bugs, or a nonexistent value, leading to crashes.
+
 https://arc.net/l/quote/jqedqnmo
 
 After:
@@ -39,6 +40,7 @@ struct SyncUp: Equatable, Identifiable, Codable {
 
 > [!IMPORTANT]
 > As we saw in Meet the Composable Architecture, we prefer to name our actions after exactly what happens in the view rather than what logic we want to execute. So we prefer addSyncUpButtonTapped over something like showAddSheet.
+
 https://arc.net/l/quote/brhhamqp
 
 ```swift
