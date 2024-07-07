@@ -13,6 +13,7 @@
 		312DA31C2C39744900C2D046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312DA31B2C39744900C2D046 /* Preview Assets.xcassets */; };
 		312DA3242C39752E00C2D046 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 312DA3232C39752E00C2D046 /* ComposableArchitecture */; };
 		312DA3262C3975E600C2D046 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DA3252C3975E600C2D046 /* Model.swift */; };
+		312DA3282C397F2900C2D046 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DA3272C397F2900C2D046 /* SyncUpsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		312DA3182C39744900C2D046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312DA31B2C39744900C2D046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		312DA3252C3975E600C2D046 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		312DA3272C397F2900C2D046 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			children = (
 				312DA3142C39744700C2D046 /* SyncUpsApp.swift */,
 				312DA3162C39744700C2D046 /* ContentView.swift */,
+				312DA3272C397F2900C2D046 /* SyncUpsList.swift */,
+				312DA3252C3975E600C2D046 /* Model.swift */,
 				312DA3182C39744900C2D046 /* Assets.xcassets */,
 				312DA31A2C39744900C2D046 /* Preview Content */,
-				312DA3252C3975E600C2D046 /* Model.swift */,
 			);
 			path = SyncUps;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				312DA3262C3975E600C2D046 /* Model.swift in Sources */,
+				312DA3282C397F2900C2D046 /* SyncUpsList.swift in Sources */,
 				312DA3172C39744700C2D046 /* ContentView.swift in Sources */,
 				312DA3152C39744700C2D046 /* SyncUpsApp.swift in Sources */,
 			);
